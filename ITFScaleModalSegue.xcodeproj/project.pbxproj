@@ -21,6 +21,7 @@
 		9F0DF0F3174EEDAC00B7D055 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0DF0F2174EEDAC00B7D055 /* ModalViewController.m */; };
 		9F0DF0F5174EEE5F00B7D055 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0DF0F4174EEE5F00B7D055 /* QuartzCore.framework */; };
 		9F0DF0FC174EF47B00B7D055 /* ITFScaleModalSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0DF0FB174EF47B00B7D055 /* ITFScaleModalSegue.m */; };
+		9F0DF0FE174F015800B7D055 /* stark.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9F0DF0FD174F015800B7D055 /* stark.gif */; };
 		C1F1BBCB9FCB4E23B429440A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F160F1FA3846CEB42444A6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		9F0DF0F4174EEE5F00B7D055 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9F0DF0FA174EF47B00B7D055 /* ITFScaleModalSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITFScaleModalSegue.h; sourceTree = "<group>"; };
 		9F0DF0FB174EF47B00B7D055 /* ITFScaleModalSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITFScaleModalSegue.m; sourceTree = "<group>"; };
+		9F0DF0FD174F015800B7D055 /* stark.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stark.gif; sourceTree = "<group>"; };
 		AE2385B541E94D63B0367319 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 		9F0DF0D5174EEC7E00B7D055 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9F0DF0FD174F015800B7D055 /* stark.gif */,
 				9F0DF0D6174EEC7E00B7D055 /* ITFScaleModalSegue-Info.plist */,
 				9F0DF0D7174EEC7E00B7D055 /* InfoPlist.strings */,
 				9F0DF0DA174EEC7E00B7D055 /* main.m */,
@@ -193,6 +196,7 @@
 				9F0DF0E3174EEC7E00B7D055 /* Default@2x.png in Resources */,
 				9F0DF0E5174EEC7E00B7D055 /* Default-568h@2x.png in Resources */,
 				9F0DF0ED174EED8B00B7D055 /* Storyboard.storyboard in Resources */,
+				9F0DF0FE174F015800B7D055 /* stark.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

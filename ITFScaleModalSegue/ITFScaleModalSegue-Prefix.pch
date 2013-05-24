@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the 'ITFScaleModalSegue' target in the 'ITFScaleModalSegue' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+    #import <FlatUIKit/UINavigationBar+FlatUI.h>
+    #import <FlatUIKit/UIColor+FlatUI.h>
+    #import <FlatUIKit/UIFont+FlatUI.h>
+    #import <FlatUIKit/FUIButton.h>
+    #import <FlatUIKit/UIBarButtonItem+FlatUI.h>
+#endif

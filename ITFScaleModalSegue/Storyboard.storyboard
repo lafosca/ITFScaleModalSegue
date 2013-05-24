@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kh3-Se-WoY">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="7B0-9C-Fn7">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="kh3-Se-WoY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zf6-sj-pss">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kkd-wM-W3r" kind="relationship" relationship="rootViewController" id="IKE-sm-VBe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EmN-Vy-EzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-69" y="177"/>
+        </scene>
+        <!--Modal View Controller - ModalView-->
+        <scene sceneID="SAr-Vf-gcP">
+            <objects>
+                <viewController id="fWV-uf-V7e" customClass="ModalViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Njg-UV-VBE">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ModalView" id="KTG-T9-F4b">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="CBg-rr-PgN">
+                            <connections>
+                                <action selector="dismiss:" destination="fWV-uf-V7e" id="cxE-ex-bhN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIJ-pk-Wd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1354" y="177"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bYX-Ro-hRb">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ttB-iI-SQH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T4B-r1-0CU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fWV-uf-V7e" kind="relationship" relationship="rootViewController" id="eBo-h7-JXB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mxq-db-DVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="177"/>
+        </scene>
+        <!--View Controller - ITFScaleModalSegue-->
+        <scene sceneID="Hxr-Se-TmZ">
+            <objects>
+                <viewController id="kkd-wM-W3r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fQQ-Qm-apH">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRV-6b-jiT" customClass="FUIButton">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" type="user" id="8Vt-WB-oyE"/>
+                                    <constraint firstAttribute="height" constant="43" type="user" id="bxv-D0-unS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Do the magic">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ttB-iI-SQH" kind="modal" id="Nuc-Rx-fAe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="dRV-6b-jiT" secondAttribute="centerX" type="user" id="Lbx-qO-o83"/>
+                            <constraint firstAttribute="centerY" secondItem="dRV-6b-jiT" secondAttribute="centerY" type="user" id="grI-ag-hLy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ITFScaleModalSegue" id="UJi-GC-d4L"/>
+                    <connections>
+                        <outlet property="button" destination="dRV-6b-jiT" id="TtU-UZ-Hub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFO-WI-0WM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="177"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

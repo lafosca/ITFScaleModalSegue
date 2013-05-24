@@ -20,6 +20,7 @@
 		9F0DF0F0174EEDA500B7D055 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0DF0EF174EEDA500B7D055 /* ViewController.m */; };
 		9F0DF0F3174EEDAC00B7D055 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0DF0F2174EEDAC00B7D055 /* ModalViewController.m */; };
 		9F0DF0F5174EEE5F00B7D055 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0DF0F4174EEE5F00B7D055 /* QuartzCore.framework */; };
+		9F0DF0FC174EF47B00B7D055 /* ITFScaleModalSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0DF0FB174EF47B00B7D055 /* ITFScaleModalSegue.m */; };
 		C1F1BBCB9FCB4E23B429440A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F160F1FA3846CEB42444A6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		9F0DF0F1174EEDAC00B7D055 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		9F0DF0F2174EEDAC00B7D055 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		9F0DF0F4174EEE5F00B7D055 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9F0DF0FA174EF47B00B7D055 /* ITFScaleModalSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITFScaleModalSegue.h; sourceTree = "<group>"; };
+		9F0DF0FB174EF47B00B7D055 /* ITFScaleModalSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITFScaleModalSegue.m; sourceTree = "<group>"; };
 		AE2385B541E94D63B0367319 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -96,7 +99,7 @@
 		9F0DF0D4174EEC7E00B7D055 /* ITFScaleModalSegue */ = {
 			isa = PBXGroup;
 			children = (
-				9F0DF0EB174EED6800B7D055 /* ITFScaleModalSegue */,
+				9F0DF0F9174EF46400B7D055 /* ITFScaleModalSegue */,
 				9F0DF0DD174EEC7E00B7D055 /* AppDelegate.h */,
 				9F0DF0DE174EEC7E00B7D055 /* AppDelegate.m */,
 				9F0DF0D5174EEC7E00B7D055 /* Supporting Files */,
@@ -123,9 +126,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9F0DF0EB174EED6800B7D055 /* ITFScaleModalSegue */ = {
+		9F0DF0F9174EF46400B7D055 /* ITFScaleModalSegue */ = {
 			isa = PBXGroup;
 			children = (
+				9F0DF0FA174EF47B00B7D055 /* ITFScaleModalSegue.h */,
+				9F0DF0FB174EF47B00B7D055 /* ITFScaleModalSegue.m */,
 			);
 			path = ITFScaleModalSegue;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				9F0DF0DF174EEC7E00B7D055 /* AppDelegate.m in Sources */,
 				9F0DF0F0174EEDA500B7D055 /* ViewController.m in Sources */,
 				9F0DF0F3174EEDAC00B7D055 /* ModalViewController.m in Sources */,
+				9F0DF0FC174EF47B00B7D055 /* ITFScaleModalSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
